@@ -1,0 +1,38 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir ./dist --source-maps",
+    "serve":"node ./dist/index.js",
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "start2": "babel-node ./src/index.js",
+    "test": "cross-env NODE_ENV=test ./node_modules/.bin/nyc mocha --require @babel/register ./src/**/*$FILE*-test.js",
+    "mocha": "cross-env NODE_ENV=test ./node_modules/.bin/nyc mocha --require @babel/register ./src/**/*$FILE*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fangmd/leetcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fangmd/leetcode/issues"
+  },
+  "homepage": "https://github.com/fangmd/leetcode#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "cross-env": "^5.2.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}

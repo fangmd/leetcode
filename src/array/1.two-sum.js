@@ -1,4 +1,5 @@
 /**
+ * Easy
  * 双重 for 循环
  * @param {number[]} nums
  * @param {number} target
@@ -6,8 +7,8 @@
  */
 var twoSum = function(nums, target) {
   var ret = [];
-  for (i = 0; i < nums.length; i++) {
-    for (j = i + 1; i < nums.length; j++) {
+  for (var i = 0; i < nums.length; i++) {
+    for (var j = i + 1; i < nums.length; j++) {
       if (nums[i] + nums[j] === target) {
         console.log(i, j);
         ret.push(i, j);
@@ -17,5 +18,9 @@ var twoSum = function(nums, target) {
   }
 };
 
-var res = twoSum([2, 7, 11, 15], 9);
-console.log(res);
+// var res = twoSum([2, 7, 11, 15], 9);
+// console.log(res);
+
+export default twoSum;
+
+// exports.twoSum = twoSum;

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["console","log"],"mappings":";;AAAA;;;;AAEAA,OAAO,CAACC,GAAR,CAAY,MAAZ","sourcesContent":["import twoSum from './array/1.two-sum';\n\nconsole.log('Haha')"],"file":"index.js"}
