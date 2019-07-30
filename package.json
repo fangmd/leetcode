@@ -19,7 +19,7 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "console.log('lint-staged')"
+      "git add "
     ]
   },
   "repository": {
