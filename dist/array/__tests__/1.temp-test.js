@@ -1,5 +1,3 @@
-"use strict";
-
 // import { equal } from 'assert';
 var assert = require('assert'); // import { equal } from 'assert';
 

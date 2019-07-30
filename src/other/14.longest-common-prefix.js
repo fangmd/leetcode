@@ -41,6 +41,6 @@ var longestCommonPrefix = function(strs) {
 // var res = longestCommonPrefix(strs);
 
 var strs = ['c', 'c'];
-var res = longestCommonPrefix(strs);
+longestCommonPrefix(strs);
 
 export default longestCommonPrefix;
