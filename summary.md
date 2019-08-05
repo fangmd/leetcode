@@ -24,7 +24,8 @@ OPT(2) = max{ OPT(1)+V2 , V2 };
 ```
 
 
-- `53.maximun-subarray`
+- `53.maximun-subarray` array
+- `70.climbing-stairs.js` other
 
 
 ## 贪心算法
