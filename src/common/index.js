@@ -3,4 +3,9 @@ function ListNode(val) {
   this.next = null;
 }
 
-export { ListNode };
+function TreeNode(val) {
+  this.val = val;
+  this.left = this.right = null;
+}
+
+export { ListNode, TreeNode };

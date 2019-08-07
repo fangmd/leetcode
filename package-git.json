@@ -12,6 +12,17 @@
     "mocha": "cross-env NODE_ENV=test ./node_modules/.bin/nyc mocha --require @babel/register ./src/**/*$FILE*-test.js",
     "lint": "eslint src/**/*.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add "
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fangmd/leetcode.git"
