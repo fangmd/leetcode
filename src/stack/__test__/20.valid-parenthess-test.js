@@ -5,6 +5,8 @@ var input1 = '()';
 var expected1 = true;
 var input2 = '[';
 var expected2 = false;
+var input3 = '()[]{}';
+var expected3 = true;
 
 describe('Stack', function() {
   it('valid-parenthess', function() {
@@ -14,5 +16,9 @@ describe('Stack', function() {
   it('valid-parenthess 2', function() {
     var ret = isValid(input2);
     assert.equal(ret, expected2);
+  });
+  it('valid-parenthess 3', function() {
+    var ret = isValid(input3);
+    assert.equal(ret, expected3);
   });
 });

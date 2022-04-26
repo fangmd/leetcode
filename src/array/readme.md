@@ -3,6 +3,17 @@
 
 Array Tag： [leetcode](https://leetcode.com/problemset/all/?topicSlugs=array)
 
+可能的处理方式:
+
+1. 双重循环
+2. 双指针从0,1开始往后移动
+3. 移除某个元素：双指针
+
+
+ES6:
+
+arr.splice 是直接修改原来的数组，
+
 
 ## 指针用法
 

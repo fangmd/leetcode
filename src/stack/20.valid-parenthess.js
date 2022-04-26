@@ -21,37 +21,55 @@ Output: true
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
-  var stack = [];
-  for (var i = 0; i < s.length; i++) {
-    var temp = s[i];
-    if (temp === '(' || temp === '[' || temp === '{') {
-      stack.push(temp);
-    } else {
-      if (temp === ')') {
-        if (stack.pop() !== '(') {
-          return false;
-        }
-      } else if (temp === ']') {
-        if (stack.pop() !== '[') {
-          return false;
-        }
-      } else if (temp === '}') {
-        if (stack.pop() !== '{') {
-          return false;
-        }
-      } else {
-        return false;
-      }
-    }
-  }
-  return stack.length === 0;
-};
+// var isValid = function (s) {
+//   var stack = []
+//   for (var i = 0; i < s.length; i++) {
+//     var temp = s[i]
+//     if (temp === "(" || temp === "[" || temp === "{") {
+//       stack.push(temp)
+//     } else {
+//       if (temp === ")") {
+//         if (stack.pop() !== "(") {
+//           return false
+//         }
+//       } else if (temp === "]") {
+//         if (stack.pop() !== "[") {
+//           return false
+//         }
+//       } else if (temp === "}") {
+//         if (stack.pop() !== "{") {
+//           return false
+//         }
+//       } else {
+//         return false
+//       }
+//     }
+//   }
+//   return stack.length === 0
+// }
 
 // var ret = isValid("()")
 // console.log(ret);
 
-export default isValid;
+var isValid2 = function (s) {
+  let stack = []
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(" || s[i] === "{" || s[i] === "[") {
+      stack.push(s[i])
+    } else {
+      if (s[i] === ")" && stack.pop() !== "(") {
+        return false
+      } else if (s[i] === "}" && stack.pop() !== "{") {
+        return false
+      } else if (s[i] === "]" && stack.pop() !== "[") {
+        return false
+      }
+    }
+  }
+  return stack.length === 0
+}
+
+export default isValid2
 
 // "["
 // false
