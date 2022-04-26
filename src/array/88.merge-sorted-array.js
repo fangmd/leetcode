@@ -11,33 +11,33 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-var merge = function(nums1, m, nums2, n) {
-  let p1 = 0;
-  let p2 = 0;
-  const result = [];
+var merge = function (nums1, m, nums2, n) {
+  let p1 = 0
+  let p2 = 0
+  const result = []
 
   while (p1 < m || p2 < n) {
-    const curr1 = nums1[p1];
-    const curr2 = nums2[p2];
+    const curr1 = nums1[p1]
+    const curr2 = nums2[p2]
 
     if (curr1 < curr2) {
-      if (p1 < m) result.push(curr1);
-      p1++;
+      if (p1 < m) result.push(curr1)
+      p1++
     } else if (curr1 > curr2) {
-      if (p2 < n) result.push(curr2);
-      p2++;
+      if (p2 < n) result.push(curr2)
+      p2++
     } else {
-      if (p1 < m) result.push(curr1);
-      if (p2 < n) result.push(curr2);
-      p1++;
-      p2++;
+      if (p1 < m) result.push(curr1)
+      if (p2 < n) result.push(curr2)
+      p1++
+      p2++
     }
   }
 
   for (let i = 0; i < result.length; i++) {
-    nums1[i] = result[i];
+    nums1[i] = result[i]
   }
-};
+}
 
 /**
  * Input:
@@ -75,6 +75,7 @@ Output: [1,2,2,3,5,6]
 3
    */
 
-
 // 解法二：arr.sort
 // 解法三：使用排序算法
+
+export default merge

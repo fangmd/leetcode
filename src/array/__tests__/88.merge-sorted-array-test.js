@@ -1,6 +1,6 @@
 var assert = require("assert")
 
-import merge from "../merge-sorted-array"
+import merge from "../88.2merge-sorted-array"
 
 describe("Array merge-sorted-array", function () {
   it("merge", function () {
