@@ -11,7 +11,7 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  * @param {number[]} nums
  * @return {number[][]}
  */
-const permute = function (nums) {
+export const permute = function (nums) {
   const ret = []
   const dfs = (arr, tmp) => {
     if (tmp.length === arr.length) {
@@ -32,5 +32,3 @@ const permute = function (nums) {
   dfs(nums, [])
   return ret
 }
-
-console.log(permute([1, 2, 3]))

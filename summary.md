@@ -61,6 +61,7 @@ OPT(2) = max{ OPT(1)+V2 , V2 };
 递归法，回溯法求解
 
 - `39. Combination Sum`
+- `46.permutations`
 
 ## BFS(广度优先搜索)
 
