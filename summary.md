@@ -62,6 +62,7 @@ OPT(2) = max{ OPT(1)+V2 , V2 };
 
 - `39. Combination Sum`
 - `46.permutations`
+- `47.permutations2`
 - `78.subsets`
 
 回溯算法结构:
