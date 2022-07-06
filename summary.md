@@ -1,5 +1,3 @@
-
-
 `* 表示还不太会的`
 
 # 算法&数据结构
@@ -25,7 +23,6 @@ OPT(2) = max{ OPT(1)+V2 , V2 };
 使用 for 循环做，需要一个数组 dp 存储子问题处理结果。 也可以只使用一个变量保存上个子问题处理结果。
 ```
 
-
 - `53.maximun-subarray` array
 - `70.climbing-stairs.js` other
 
@@ -35,16 +32,19 @@ OPT(2) = max{ OPT(1)+V2 , V2 };
 2. 广度优先遍历
 3. 前序：根节点 -》 左子树 -》 右子树
 4. 中序：左子树 -》 根节点 -》 右子树
-5. 后序：左子树 -》 右子树 -》 根节点 
+5. 后序：左子树 -》 右子树 -》 根节点
 
 递归做法，非递归做法(栈)
 
 - `100.same-tree` other, 二叉树遍历
 
-
 ## 贪心算法
 
 - `11.container-with-most-water`
+
+## 冒泡排序
+
+- `75.sort-colors`
 
 ## 快速排序算法
 
@@ -73,16 +73,15 @@ def backtrack(路径, 选择列表):
     if 满足结束条件:
         result.add(路径)
         return
-    
+
     for 选择 in 选择列表:
         做选择
         backtrack(路径, 选择列表)
         撤销选择
 ```
 
-
 ## BFS(广度优先搜索)
 
-## Dijkstra算法
+## Dijkstra 算法
 
 ## 朴素贝叶斯分类算法
